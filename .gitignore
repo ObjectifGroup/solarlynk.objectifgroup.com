@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.env
+.vscode
+.jekyll-cache/
+.DS_Store
+.nova
+.DS_Store

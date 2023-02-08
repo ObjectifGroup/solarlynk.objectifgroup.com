@@ -1,0 +1,44 @@
+<!-- hero section -->
+<div 
+  class="{% if page.layout != 'home' %}bg-shape bg-cover{% endif %} bg-dark" 
+  {% if page.layout != 'home' %}
+    style="
+      background: rgb(0,0,0);
+      background: linear-gradient(168deg, rgba(0,0,0,1) 0%, rgba(0,153,204,1) 100%);
+    "
+  {% endif %}
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <div class="pt-lg-18 pb-lg-18 pt-md-10 pb-md-16 py-12 text-center mb-6 mb-lg-0">
+          <!-- If the homepage -->
+          {% if page.layout == 'home' %}
+            <!-- Hompage hero -->
+            <h2 class="display-3 font-weight-bold text-white mb-2">
+              {{ page.hero-title }}
+            </h2>
+            <p class="mb-4 lead">
+              {{ page.hero-subtitle }}
+            </p>
+          {% else %}
+          <!-- Page hero -->
+            <h2 class="display-3 font-weight-bold text-white mb-2">
+              {{ page.title }}
+            </h2>
+            <p class="mb-4 text-white lead">
+              {{ page.description }}
+            </p>
+          {% endif %}
+          <!-- End not the homepage -->
+
+          <!-- CTA Button -->
+          {% if page.hero-btn-link %}
+          <a href="{{ page.hero-btn-link | absolute_url }}" class="btn btn-primary btn-lg">{{ page.hero-btn-text }}</a>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

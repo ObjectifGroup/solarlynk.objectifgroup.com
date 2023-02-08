@@ -1,0 +1,85 @@
+baseurl: ''
+url: 'https://solarlynk.objectifgroup.com'
+title: SolarLynk
+tagline: 
+description: One-click integration between Aurora Solar and HubSpot CRM. No complicated set up or dealing with broken configurations!
+author: SolarLynk
+logo: /favicon.ico
+lang: en_US
+favicon: /favicon.ico
+og_image: /assets/images/bg-hero.jpg
+mailchimp-list: 
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+include:
+  - _pages
+exclude:
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+collections:
+  landing-pages:
+    output: true
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: page
+      author: SolarLynk
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      permalink: '/:title'
+      is_post: true
+  - scope:
+      path: _pages
+    values:
+      layout: page
+      permalink: '/:basename/'
+  - scope:
+      path: _landing-pages
+    values:
+      layout: use-case-single
+      permalink: '/:path/'
+  - scope:
+      path: "assets/*"
+    values:
+      sitemap: false
+compress_html:
+  clippings: all
+  comments:
+    - '<!-- '
+    - ' -->'
+  endings:
+    - html
+    - head
+    - body
+    - li
+    - dt
+    - dd
+    - rt
+    - rp
+    - optgroup
+    - option
+    - colgroup
+    - caption
+    - thead
+    - tbody
+    - tfoot
+    - tr
+    - td
+    - th
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []

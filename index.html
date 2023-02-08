@@ -1,0 +1,194 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+sitemap: true
+image: /assets/images/hero-bg.webp
+---
+
+{% include navbar.html %}
+
+<div
+  class="bg-white py-16"
+  {% if page.image %}
+    style="
+      background-image: 
+        linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), 
+        url(
+          {{ page.image | absolute_url }}
+          );
+      background-size: cover;
+      background-position: center;
+    "
+  {% endif %}
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div>
+          <h1 class="text-white mb-3 display-4">
+            One-click integration between Aurora Solar and HubSpot
+          </h1>
+          <p class="mb-6 lead text-white">
+            Keep your deals synced in HubSpot and pull in Aurora project data seamlessly.
+          </p>
+          <a href="/request-demo" class="btn btn-primary me-3">Schedule a call</a>
+
+          <!--
+          <a class="popup-youtube icon-shape rounded-circle btn-play icon-md bg-secondary text-white me-1 text-decoration-none font-12" href="https://www.youtube.com/watch?v=JRzWRZahOVU">
+            <i class="fas fa-play"></i>
+          </a>
+          <a href="https://www.youtube.com/watch?v=JRzWRZahOVU" class="popup-youtube text-white">Watch Video </a> 
+          -->
+
+        </div>
+      </div>
+
+      <!-- 
+      <div class="offset-xl-3 col-xl-4 offset-lg-1 col-lg-5 col-md-6 col-12 d-none d-md-block">
+        <div class="position-relative z-1">
+          <img src="{{ '/assets/images/ios-iphone12-mockup.png" alt="" class="' | absolute_url }}img-fluid w-100" />
+        </div>
+      </div> 
+      -->
+
+    </div>
+  </div>
+</div>
+{% comment %}
+{% include compliance-logos.html %}
+{% endcomment %}
+
+<div class="container py-6 py-md-12 border-bottom border-light">
+  <div class="col-12 col-md-10 offset-md-1">
+    <div class="row">
+      <div class="col-6 col-md-5">
+        <h2 class="mb-3 h1 fw-light d-block position-relative top-50 start-50 translate-middle">
+          Keep your data<br /><span class="fw-bold">in sync</span>
+        </h2>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
+          <div class="carousel-inner">
+
+
+            <div class="carousel-item bg-white active">
+              <div class="ratio ratio-4x3">
+                <div>
+                  <img src="/assets/images/logos/hubspot.svg" class="d-block w-100 position-absolute top-50 start-50 translate-middle p-3" alt="HubSpot logo" />
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 col-md-1 d-none d-md-block">
+        <i class="fa-solid fa-arrow-right position-absolute top-50 start-50 translate-middle"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 position-relative start-0 top-50 translate-middle-y">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+        </svg>
+      </div>
+
+      <div class="col-5 col-md-3 d-none d-md-block">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
+          <div class="carousel-inner">
+
+
+            <div class="carousel-item bg-white active">
+              <div class="ratio ratio-4x3">
+                <div>
+                  <img src="/assets/images/logos/aurora.png" class="d-block w-100 position-absolute top-50 start-50 translate-middle p-3" alt="Aurora Solar logo" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container pb-6 pb-md-12">
+  <div class="col-12 col-md-8 offset-md-2">
+
+    <div class="row align-items-center pb-6 pb-md-12">
+      <div class="col-md-6 order-2 order-md-1">
+        <h4 class="h3">Status Sync</h4>
+        <p>
+           Automatically keep deal stages in HubSpot updated based on the Aurora project status. As you make changes in Aurora, you can reflect that on the HubSpot deal. 
+        </p>
+        <!-- <p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p> -->
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <img src="{{ '/assets/images/313.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
+      </div>
+    </div>
+
+    <div class="row align-items-center pb-6 pb-md-12">
+      <div class="col-md-6 order-2">
+        <h4 class="h3">View Aurora Projects within HubSpot</h4>
+        <p>
+          Our native HubSpot integration allows you to quickly access your Aurora projects directly from the HubSpot deal. Open directly into sales mode, or edit the design without having to search for the right project. 
+        </p>
+        <!-- <p><a href="{{ 'how-to-price-festival-tickets/' | absolute_url }}">Learn more</a></p> -->
+      </div>
+      <div class="col-md-6 order-1">
+        <img src="{{ '/assets/images/229.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h4 class="h3">Secure and Private</h4>
+        <p>
+          Your data remains your data and is never available to third parties. SolarLynk provides a secure tunnel between Aurora and HubSpot. 
+        </p>
+        <!-- <p><a href="{{ 'how-to-price-performing-arts-tickets/' | absolute_url }}">Learn more</a></p> -->
+      </div>
+      <div class="col-md-6 order-1 order-md-1 ">
+        <img src="{{ '/assets/images/225.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{%comment%}
+<div class="container pb-6 pb-md-12">
+  <div class="col-12 col-md-8 offset-md-2">
+    {% include pricing.html %}
+  </div>
+</div>
+{%endcomment%}
+{% comment %}
+<div class="container pb-6 pb-md-12">
+  <div class="col-12 col-md-8 offset-md-2">
+    <h2 class="mb-4">How it Works</h2>
+    <p>
+      TransferVox seamlessly connects with your telephony or recording platform and your desired endpoint. Our system allows you to define automations that occur as soon as a call has completed, or to run exports on an as-needed basis. 
+    </p>
+    <p>
+      Our systems create a secure tunnel between the originator platform and the receiver platform, utilizing tools that are HIPAA and PCI/DSS compliant. 
+    </p>
+
+    <h4 class="mb-4">Outage protection</h2>
+    <p>
+      If either the originator or receiver platform has an outage — you never have to worry. TransferVox queues the recording and will automatically catch back up once the service is restored. 
+    </p>
+    <h4 class="mb-4">Secure secondary storage</h2>
+    <p>
+      By default, we don’t store your call recordings. However, we offer fully-managed storage on an opt-in basis, where we store your recordings in an isolated and encrypted Amazon Web Services S3 bucket. This is recommended as a failsafe for extreme situations, but you get the benefit of our discounted AWS rates based on the large volume of recordings we store for customers. (It’s often cheaper to store with TransferVox than pointing your recordings to your own S3 bucket — but it’s your choice!) Contact us today for the latest pricing.
+    </p>
+
+  </div>
+</div>
+    {% endcomment %}
+{% include footer.html %}
