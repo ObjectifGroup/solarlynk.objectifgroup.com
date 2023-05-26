@@ -1,0 +1,5 @@
+Sitemap: https://solarlynk.xyz/sitemap.xml
+
+User-agent: *
+Disallow: /terms/
+Disallow: /privacy/
